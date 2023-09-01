@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  list-style: none;
+
+  font-family: 'Manrope', sans-serif;
+}
+
+@import "partials/_colors.scss";
+@import "partials/header.scss";
+@import "partials/hero.scss";
+@import "partials/sobre.scss";
+@import "partials/aside.scss";
+@import "partials/mentorias.scss";
+@import "partials/footer.scss";

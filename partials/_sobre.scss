@@ -1,0 +1,53 @@
+.sobre {
+  background-color: $primary-light;
+
+  section {
+    padding: 2em;
+
+    p {
+      text-align: center;
+      color: $secondary-dark;
+    }
+
+    .img-medico {
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .sobre {
+    padding: 2em 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    section {
+      p {
+        max-width: 600px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .sobre {
+    padding: 0 1em;
+
+    section {
+      padding: 0 1em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      p{
+        font-size: 18px;
+      }
+
+      .img-medico {
+        display: block;
+        max-width: 450px;
+        margin-top: -50px;
+      }
+    }
+  }
+}

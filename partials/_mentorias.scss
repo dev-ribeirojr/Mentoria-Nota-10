@@ -1,0 +1,82 @@
+.bg-mentorias {
+  width: 100%;
+  background: url('../assets/imgs/young-female-doctor-standing-corridor-hospital\ 1\ \(1\).png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.mentorias {
+  padding: 1em;
+
+  h2 {
+    text-align: center;
+    font-size: 28px;
+    color: $secondary-dark;
+    margin: 2em 0;
+    line-height: 120%;
+  }
+
+}
+
+.lista-mentorias {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+
+  section {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, minmax(200px, 1fr));
+    gap: 1em;
+  }
+
+  li {
+    border: 1px solid $primary-light;
+    padding: 1em;
+    border-radius: 5px;
+    text-align: center;
+
+    article {
+      color: $secondary-dark;
+
+      h3 {
+        margin-bottom: 0.5em;
+      }
+    }
+  }
+
+}
+
+@media screen and (min-width: 768px) {
+  .mentorias {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h2 {
+      max-width: 600px;
+    }
+
+  }
+
+  .lista-mentorias {
+    section {
+      grid-template-columns: repeat(2, minmax(200px, 450px));
+    }
+
+    .ultimo {
+      max-width: 450px;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .mentorias {
+    p {
+      font-size: 18px;
+    }
+  }
+}

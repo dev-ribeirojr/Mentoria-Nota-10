@@ -1,0 +1,58 @@
+.area-whats {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  right: 15px;
+  bottom: 15px;
+
+  &::after {
+    content: "";
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: absolute;
+    background: #4dc24779;
+    z-index: 1;
+    animation: colors 3s linear infinite;
+  }
+
+  &::before {
+    content: "";
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: absolute;
+    background: #4dc2475e;
+    z-index: 1;
+    animation: colors 3s linear infinite;
+    animation-delay: 1.5s;
+  }
+
+
+  section {
+    padding: 8px;
+    background-color: #4dc247;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+    box-shadow: 0 0 10px #4dc2479f;
+
+    i {
+      font-size: 2.5em;
+      color: $white-normal;
+    }
+  }
+}
+
+@keyframes colors {
+  to {
+    height: 70px;
+    width: 70px;
+  }
+}
